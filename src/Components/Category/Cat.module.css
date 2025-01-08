@@ -1,0 +1,194 @@
+.shoecat{
+    margin-bottom: 10rem;
+}
+.watchcat{
+    margin-bottom: 10rem;
+}
+.tshirtcat{
+    margin-bottom: 10rem;
+}
+.hatcat{
+    margin-bottom: 10rem;
+}
+.footer {
+    margin-top: 6rem;
+}
+.product {
+    margin-top: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+  }
+  .cart{
+    width:24px;
+    height:22px;
+  }
+  .productCard {
+    position: relative;
+    width: 20rem;
+    height: 24rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    margin:10px;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .productCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .productImage {
+    max-width: 100%;
+    max-height: 70%; 
+    object-fit: contain; 
+    display: block;
+  }
+  
+  .priceTag {
+    position: relative;
+    background: #f8f9fa;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .cartIcon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #DC4F4F;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+  }
+  .productCard:hover .cartIcon {
+    display: block;
+  }
+  .sizeBox{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 10;
+    text-align: center;
+    width: 16rem;
+  }
+  .sizeBox button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background: #B40404;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .sizeBox button:hover {
+    background: #DC4F4F;
+    color: white;
+  }
+  .productInfo {
+    padding: 10px;
+  }
+  .productInfo p {
+    color: #000000;
+  }
+  .productInfo h4{
+    font-size: 1.1rem;
+    font-size: 1.1rem;
+    color: #8f0d00;
+  }
+  @media (max-width: 1300px) {
+    .product{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+  @media screen and (max-width: 992px) {
+      .title {
+        display: flex;
+        margin-top: 6rem;
+        padding-left: 4.6rem;
+        padding-right: 10rem;
+      }
+      .pInfo {
+          display: flex;
+          margin-top: 2.5rem;
+          padding-left: 4.6rem;
+          padding-right: 10rem;
+          font-weight: 600;
+          font-size: 2rem;
+        }
+        .product {
+          margin-top: 2.5rem;
+          padding-left: 4rem;
+          padding-right: 4rem;
+          margin-bottom: 4rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .cartIcon {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          background: #DC4F4F;
+          color: white;
+          padding: 10px;
+          border-radius: 50%;
+          cursor: pointer;
+          display: block;
+        }
+    }
+    @media screen and (max-width: 768px) {
+      .cartIcon {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: block;
+      }
+    
+      .sizeBox {
+        width: 90%;
+        left: 5%;
+        transform: translateY(-50%);
+      }
+    }
+    @media screen and (max-width: 680px) {
+      .pInfo {
+        font-size: 1.4rem;
+        padding-right: 0px;
+      }
+    }
+  @media screen and (max-width: 440px) {
+      .pInfo {
+        font-size: 1.2rem;
+        padding-left: 63px;
+        padding-right: 0px;
+        text-wrap: nowrap;
+      }
+    }
+    @media screen and (max-width: 340px) {
+      .pInfo {
+        font-size: 1rem;
+        padding-left: 63px;
+        padding-right: 0px;
+        text-wrap: nowrap;
+      }
+    }

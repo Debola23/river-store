@@ -1,0 +1,70 @@
+.modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.modal {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30rem;
+  max-width: 430px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  background-color: #B40404;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.closeButton:hover {
+  background-color: #6a1212;
+}
+.h2{
+  border-bottom: 1px solid #4e565d;
+  line-height: 55px;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    width: 90%; 
+    padding: 15px;
+  }
+
+  .closeButton {
+    padding: 10px 15px;
+  }
+}

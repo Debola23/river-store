@@ -1,0 +1,87 @@
+.Barner{
+    color: black;
+    margin-top: 10rem;
+}
+.heropic{
+    width: 100%;
+    height: 36rem;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+} 
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover{
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+  }
+  
+  .hover:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  #arrow{
+    color: white;
+    fill: white;
+  }
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+    .heropic{
+        width: 100%;
+        height: 25rem;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+    p h5{
+        font-size: 13.5px;
+    }
+}

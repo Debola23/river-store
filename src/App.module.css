@@ -1,0 +1,49 @@
+.hh3{
+    font-family: Rubik,sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500
+}
+.hh2{
+    font-family: Poppins,sans-serif;
+    font-size: 4.2rem;
+    margin: -0.7rem 0 3rem;
+    font-weight:600;
+}
+.part2Box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 3.7rem;
+    padding: 0 3rem;
+    margin-bottom: 6rem;
+}
+.part2Box1{
+    text-align: center;
+
+}
+
+.hh3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight:600;
+}
+.pp{
+    color: #706f7b;
+    font-family: Rubik,sans-serif;
+    font-size: 1rem;
+    line-height: 1.23;
+}
+
+
+
+@media (max-width: 1224px) {
+    .part2Box {
+      grid-template-columns: 1fr;
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .part2Box1{
+        margin-bottom: 1.5rem;
+    }
+  }

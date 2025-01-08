@@ -1,0 +1,40 @@
+.barner{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
+.barnerText{
+    font-size: large;
+}
+.barnerText a{
+    color: rgb(255, 255, 255);
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: small;
+}
+.barnerText a:hover{
+    text-decoration: underline;
+}
+.lang{
+    cursor: pointer;
+}
+.langFlag{
+    width: 22px;
+    min-width: 22px
+}
+.currentOption{
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 1000px){
+    .barnerText{
+      display: none;
+    }
+    .barner{
+        justify-content: flex-end;
+    }
+   
+}
